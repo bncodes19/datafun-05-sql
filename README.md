@@ -6,7 +6,8 @@ These are the steps and overview of what this project accomplishes:
 - Inserts data into these two tables from CSV files (data/car_brands.csv and data/car_models.csv)
 - Insert, delete, and update statements are then ran from SQL files on the created tables (sql/insert_records.sql, sql/delete_records.sql, sql/update_records.sql)
 - Analysis queries are created to view the data
-- Results are stored in 'query_results_pretty.txt'
+- Analysis query output is stored in https://github.com/bncodes19/datafun-05-sql/blob/main/query_results_pretty.txt
+- Logs are stored in https://github.com/bncodes19/datafun-05-sql/blob/main/log.txt  
 
 This project utilizes several Python packages. The list of required Python projects can be found in requirements.txt.
 
