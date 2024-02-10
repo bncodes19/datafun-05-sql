@@ -1,0 +1,89 @@
+This text file contains the clean output of the analysis query sql files.
+
+sql/query_aggregation.sql
++----------+-----------+
+|brand_name|model_count|
++----------+-----------+
+|Ford      |5          |
+|Honda     |2          |
+|Tesla     |4          |
+|Kia       |3          |
+|Toyota    |4          |
+|Volvo     |2          |
+|Hyundai   |1          |
++----------+-----------+
+
+sql/query_filter.sql
++----------+-------------+------------+----------+---------------------+
+|brand_name|country      |year_founded|model_name|model_introduced_date|
++----------+-------------+------------+----------+---------------------+
+|Tesla     |United States|2003        |Model 3   |2017                 |
+|Tesla     |United States|2003        |Model Y   |2020                 |
+|Tesla     |United States|2003        |Model S   |2012                 |
+|Tesla     |United States|2003        |Model X   |2015                 |
++----------+-------------+------------+----------+---------------------+
+
+sql/query_join.sql
++----------+----------+---------------------+
+|brand_name|model_name|model_introduced_year|
++----------+----------+---------------------+
+|Tesla     |Model 3   |2017                 |
+|Tesla     |Model Y   |2020                 |
+|Tesla     |Model S   |2012                 |
+|Tesla     |Model X   |2015                 |
+|Toyota    |RAV4      |1994                 |
+|Toyota    |Camry     |1982                 |
+|Toyota    |Corolla   |1966                 |
+|Toyota    |Sienna    |1997                 |
+|Honda     |Accord    |1976                 |
+|Honda     |Civic     |1972                 |
+|Volvo     |XC40      |2017                 |
+|Volvo     |XC60      |2008                 |
+|Ford      |Focus     |1998                 |
+|Ford      |Mustang   |1964                 |
+|Ford      |Escape    |2000                 |
+|Ford      |Explorer  |1990                 |
+|Ford      |Ranger    |1981                 |
+|Kia       |Telluride |2019                 |
+|Kia       |Sportage  |1993                 |
+|Hyundai   |Sonata    |1985                 |
+|Kia       |Sorento   |2002                 |
++----------+----------+---------------------+
+
+
+sql/query_sorting.sql
++----------+-------------+------------+----------+---------------------+
+|brand_name|country      |year_founded|model_name|model_introduced_date|
++----------+-------------+------------+----------+---------------------+
+|Tesla     |United States|2003        |Model Y   |2020                 |
+|Kia       |South Korea  |1944        |Telluride |2019                 |
+|Tesla     |United States|2003        |Model 3   |2017                 |
+|Volvo     |Sweden       |1927        |XC40      |2017                 |
+|Tesla     |United States|2003        |Model X   |2015                 |
+|Tesla     |United States|2003        |Model S   |2012                 |
+|Volvo     |Sweden       |1927        |XC60      |2008                 |
+|Kia       |South Korea  |1944        |Sorento   |2002                 |
+|Ford      |United States|1903        |Escape    |2000                 |
+|Ford      |United States|1903        |Focus     |1998                 |
+|Toyota    |Japan        |1937        |Sienna    |1997                 |
+|Toyota    |Japan        |1937        |RAV4      |1994                 |
+|Kia       |South Korea  |1944        |Sportage  |1993                 |
+|Ford      |United States|1903        |Explorer  |1990                 |
+|Hyundai   |South Korea  |1967        |Sonata    |1985                 |
+|Toyota    |Japan        |1937        |Camry     |1982                 |
+|Ford      |United States|1903        |Ranger    |1981                 |
+|Honda     |Japan        |1946        |Accord    |1976                 |
+|Honda     |Japan        |1946        |Civic     |1972                 |
+|Toyota    |Japan        |1937        |Corolla   |1966                 |
+|Ford      |United States|1903        |Mustang   |1964                 |
++----------+-------------+------------+----------+---------------------+
+
+sql/query_group_by.sql
++-------------+-------------------+-----------------+-----------------+
+|country      |count_of_car_models|oldest_model_year|newest_model_year|
++-------------+-------------------+-----------------+-----------------+
+|Sweden       |2                  |2008             |2017             |
+|United States|9                  |1964             |2020             |
+|South Korea  |4                  |1985             |2019             |
+|Japan        |6                  |1966             |1997             |
++-------------+-------------------+-----------------+-----------------+

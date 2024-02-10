@@ -1,0 +1,21 @@
+id,model_name,brand_id,year_introduced
+1,Model 3,5,2017
+2,Model Y,5,2020
+3,Model S,5,2012
+4,Model X,5,2015
+5,RAV4,1,1994
+6,Camry,1,1982
+7,Corolla,1,1966
+8,Sienna,1,1997
+9,Accord,6,1976
+10,Civic,6,1972
+11,XC40,7,2017
+12,XC60,7,2008
+13,Focus,2,1998
+14,Mustang,2,1964
+15,Escape,2,2000
+16,Explorer,2,1990
+17,Ranger,2,1981
+18,Telluride,3,2019
+19,Sportage,3,1993
+20,Sonata,4,1985
